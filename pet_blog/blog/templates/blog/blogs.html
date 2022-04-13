@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h1>Blogs</h1>
+{% if form.blogs|length %}
+<form method="post">
+    {% csrf_token %}
+    {% include 'blog/includes/subscription_field_set.html' with choices=form.blogs %}
+    <button type="submit" class="btn btn-outline-danger btn-sm">Subscribe</button>
+</form>
+{% else %}
+<p>No blogs found</p>
+{% endif %}
+{% endblock content %}

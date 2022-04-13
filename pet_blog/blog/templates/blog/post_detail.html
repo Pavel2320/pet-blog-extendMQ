@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h1>{{ post.title }}</h1>
+
+<div class="card mb-2">
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">posted {{ post.posted|date:"M d, Y h:m" }}</h6>
+        <p class="card-text">{{ post.content }}</p>
+    </div>
+</div>
+{% endblock content %}

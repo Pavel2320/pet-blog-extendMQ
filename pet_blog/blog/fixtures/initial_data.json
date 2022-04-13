@@ -1,0 +1,254 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$sr7TWkSfU0hVN3Bg4EiU4D$zHsbwJRtchUngqQIoeI8/gRm78kpGVTJqtHrl4AMPvw=",
+      "username": "User1",
+      "email": "user1@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-12-19T10:53:10.795Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$sr7TWkSfU0hVN3Bg4EiU4D$zHsbwJRtchUngqQIoeI8/gRm78kpGVTJqtHrl4AMPvw=",
+      "username": "User2",
+      "email": "user2@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-12-19T11:53:10.795Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$sr7TWkSfU0hVN3Bg4EiU4D$zHsbwJRtchUngqQIoeI8/gRm78kpGVTJqtHrl4AMPvw=",
+      "username": "User3",
+      "email": "user3@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-12-19T12:53:10.795Z"
+    }
+  },
+   {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$sr7TWkSfU0hVN3Bg4EiU4D$zHsbwJRtchUngqQIoeI8/gRm78kpGVTJqtHrl4AMPvw=",
+      "username": "User4",
+      "email": "user4@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-12-19T22:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+      "author": 1
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 2,
+    "fields": {
+      "author": 2
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 3,
+    "fields": {
+      "author": 3
+    }
+  },
+   {
+    "model": "blog.blog",
+    "pk": 4,
+    "fields": {
+      "author": 4
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "blog": 1,
+      "title": "Test post 1",
+      "content": "Test content 1",
+      "posted": "2021-12-19T13:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "blog": 1,
+      "title": "Test post 2",
+      "content": "Test content 2",
+      "posted": "2021-12-19T14:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "blog": 1,
+      "title": "Test post 3",
+      "content": "Test content 3",
+      "posted": "2021-12-19T15:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+      "blog": 2,
+      "title": "Test post 4",
+      "content": "Test content 4",
+      "posted": "2021-12-19T16:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+      "blog": 2,
+      "title": "Test post 5",
+      "content": "Test content 5",
+      "posted": "2021-12-19T17:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+      "blog": 2,
+      "title": "Test post 6",
+      "content": "Test content 6",
+      "posted": "2021-12-19T18:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 7,
+    "fields": {
+      "blog": 3,
+      "title": "Test post 7",
+      "content": "Test content 7",
+      "posted": "2021-12-19T19:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 8,
+    "fields": {
+      "blog": 3,
+      "title": "Test post 8",
+      "content": "Test content 8",
+      "posted": "2021-12-19T20:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 9,
+    "fields": {
+      "blog": 3,
+      "title": "Test post 9",
+      "content": "Test content 9",
+      "posted": "2021-12-19T21:53:10.795Z"
+    }
+  },
+    {
+    "model": "blog.post",
+    "pk": 10,
+    "fields": {
+      "blog": 4,
+      "title": "Test post 10",
+      "content": "Test content 10",
+      "posted": "2021-12-19T22:53:10.795Z"
+    }
+  },
+  {
+    "model": "blog.subscription",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "blog": 2
+    }
+  },
+  {
+    "model": "blog.subscription",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "blog": 3
+    }
+  },
+  {
+    "model": "blog.feed",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "post": 6,
+      "subscription": 1,
+      "is_read": false
+    }
+  },
+  {
+    "model": "blog.feed",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "post": 5,
+      "subscription": 1,
+      "is_read": false
+    }
+  },
+  {
+    "model": "blog.feed",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "post": 4,
+      "subscription": 1,
+      "is_read": false
+    }
+  },
+  {
+    "model": "blog.feed",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "post": 9,
+      "subscription": 2,
+      "is_read": false
+    }
+  },
+  {
+    "model": "blog.feed",
+    "pk": 5,
+    "fields": {
+      "user": 1,
+      "post": 8,
+      "subscription": 2,
+      "is_read": false
+    }
+  },
+  {
+    "model": "blog.feed",
+    "pk": 6,
+    "fields": {
+      "user": 1,
+      "post": 7,
+      "subscription": 2,
+      "is_read": true
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h1>Feed</h1>
+{% if form.feeds|length %}
+<form method="post">
+    {% csrf_token %}
+    {% for checkbox in form.feeds %}
+    <div class="form-check mb-3">
+        {{ checkbox }}
+    </div>
+    {% endfor %}
+    <button type="submit" class="btn btn-outline-secondary btn-sm">Is Read</button>
+</form>
+{% else %}
+<p>No posts found</p>
+{% endif %}
+{% endblock content %}

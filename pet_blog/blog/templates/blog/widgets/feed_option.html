@@ -1,0 +1,1 @@
+{% include "django/forms/widgets/input.html" %} <label class="form-check-label" for="{{ widget.attrs.id }}"><a href="{% url 'blog:post-detail' widget.value.instance.post.pk %}">{{ widget.value.instance.post }}</a></label>

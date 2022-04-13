@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h1>Posts</h1>
+{% if posts %}
+{% include 'blog/includes/posts_list.html' with posts=posts %}
+{% else %}
+<p>No posts found</p>
+{% endif %}
+{% endblock content %}
